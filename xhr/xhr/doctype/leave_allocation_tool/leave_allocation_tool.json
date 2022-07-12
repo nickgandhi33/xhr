@@ -1,0 +1,157 @@
+{
+ "allow_copy": 1,
+ "creation": "2019-11-03 10:46:21.387811",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "engine": "InnoDB",
+ "field_order": [
+  "select_employees_section",
+  "company",
+  "employment_type",
+  "branch",
+  "column_break1",
+  "department",
+  "designation",
+  "employee_grade",
+  "employee",
+  "allocate_leaves_section",
+  "from_date",
+  "to_date",
+  "leave_period",
+  "leave_policy",
+  "leave_type",
+  "carry_forward",
+  "no_of_days",
+  "allocate"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_employees_section",
+   "fieldtype": "Section Break",
+   "label": "Select Employees"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employment Type (optional)",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch (optional)",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department (optional)",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation (optional)",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Link",
+   "label": "Employee Grade (optional)",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee (optional)",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "allocate_leaves_section",
+   "fieldtype": "Section Break",
+   "label": "Allocate Leaves"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leave_policy",
+   "fieldtype": "Link",
+   "label": "Leave Policy",
+   "options": "Leave Policy"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "label": "Leave Type",
+   "options": "Leave Type"
+  },
+  {
+   "default": "1",
+   "description": "Please select Carry Forward if you also want to include previous fiscal year's balance leaves to this fiscal year",
+   "fieldname": "carry_forward",
+   "fieldtype": "Check",
+   "label": "Carry Forward"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Float",
+   "label": "New Leaves Allocated (In Days)"
+  },
+  {
+   "fieldname": "allocate",
+   "fieldtype": "Button",
+   "label": "Allocate",
+   "options": "allocate_leave"
+  },
+  {
+   "fieldname": "leave_period",
+   "fieldtype": "Link",
+   "label": "Leave Period",
+   "options": "Leave Period"
+  }
+ ],
+ "hide_toolbar": 1,
+ "icon": "fa fa-cog",
+ "issingle": 1,
+ "modified": "2019-11-03 12:36:03.235129",
+ "modified_by": "Administrator",
+ "module": "Xhr",
+ "name": "Leave Allocation Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "HR User",
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

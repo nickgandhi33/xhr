@@ -1,0 +1,113 @@
+{
+ "autoname": "field:leave_type",
+ "creation": "2019-11-03 10:39:45.960875",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "parent_leave_type",
+  "col_1",
+  "leave_calculation_method",
+  "select_employees",
+  "gender",
+  "leave_allocations_section",
+  "leave_type_policy_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "label": "Leave Type",
+   "options": "Leave Type",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "leave_allocations_section",
+   "fieldtype": "Section Break",
+   "label": "Leave Allocations"
+  },
+  {
+   "fieldname": "leave_type_policy_details",
+   "fieldtype": "Table",
+   "label": "Leave Type Policy Details",
+   "options": "Leave Type Policy Detail"
+  },
+  {
+   "fieldname": "select_employees",
+   "fieldtype": "Section Break",
+   "label": "Select Employees"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "parent_leave_type",
+   "fieldtype": "Link",
+   "label": "Parent Leave Type",
+   "options": "Leave Type"
+  },
+  {
+   "fieldname": "col_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Full",
+   "fieldname": "leave_calculation_method",
+   "fieldtype": "Select",
+   "label": "Leave Calculation Method",
+   "options": "Full\nAccrual"
+  }
+ ],
+ "modified": "2019-11-18 00:25:15.766012",
+ "modified_by": "Administrator",
+ "module": "Xhr",
+ "name": "Leave Type Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "leave_type",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
